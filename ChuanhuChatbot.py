@@ -134,7 +134,7 @@ if dockerflag:
     if authflag:
         demo.queue().launch(server_name="0.0.0.0", server_port=7860,auth=(username, password))
     else:
-        demo.queue().launch(server_name="0.0.0.0", server_port=7860, share=False)
+        demo.queue().launch(server_name="0.0.0.0", server_port=7860, share=True)
 #if not running in Docker
 else:
     if authflag:
